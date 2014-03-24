@@ -43,7 +43,7 @@ while getopts :a:d:hv:V flag
     esac
 	done
 
-shift $(($OPTIND - 1))
+shift $((OPTIND - 1))
 
 
 # Check for filename argument.
