@@ -89,17 +89,17 @@ fi
 # Check target..
 #
 
-if [ ! -d $NEW_SCRIPT_DIR ]
+if [ ! -d "$NEW_SCRIPT_DIR" ]
 then
   echo "Target directory doesn't exist."; exit 1
 fi
 
-if [ ! -w $NEW_SCRIPT_DIR ]
+if [ ! -w "$NEW_SCRIPT_DIR" ]
 then
   echo "Target directory isn't writeable."; exit 1
 fi
 
-if [ -e $NEW_SCRIPT_FILENAME ]
+if [ -e "$NEW_SCRIPT_FILENAME" ]
 then
   echo "Target already exists."; exit 1
 fi
@@ -174,8 +174,8 @@ echo VAR1="$VAR1"
 exit 0
 
 DEBUG_OUTPUT
-) > $NEW_SCRIPT_FILENAME
+) > "$NEW_SCRIPT_FILENAME"
 
-chmod +x $NEW_SCRIPT_FILENAME
+chmod +x "$NEW_SCRIPT_FILENAME"
 echo "New script $NEW_SCRIPT_FILENAME created."
 exit 0
